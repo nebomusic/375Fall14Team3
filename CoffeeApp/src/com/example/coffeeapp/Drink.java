@@ -72,9 +72,18 @@ public String getFlavor() {
 public String getTopping() {
 	return topping;
 }
-
-
-
+public String getDairy() {
+	return dairy;
+}
+public String getSize() {
+	return size;
+}
+public Date getDate() {
+	return date;
+}
+public void setServed(boolean s) {
+	served = s;
+}
 
 
 
