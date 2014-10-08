@@ -4,6 +4,22 @@
     <string name="app_name">CoffeeApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
+	<string-array name = "flavor_array">
+	    <item>None</item>
+	    <item>Mocha</item>
+	    <item>Vanilla</item>
+	    <item>Carmel</item>
+	</string-array>
+	
+	<string-array name = "dairy_array">
+	    <item>None</item>
+	    <item>Half and Half</item>
+	    <item>Skim</item>
+	    <item>Soy</item>
+	</string-array>
+	    
+=======
     
     <string-array name = "flavor_array">
         <item>None</item>
@@ -19,4 +35,5 @@
         <item>Soy</item>
     </string-array>
 
+>>>>>>> 83b705db1437812961bd2d6f21b62884af3dd9ec
 </resources>
