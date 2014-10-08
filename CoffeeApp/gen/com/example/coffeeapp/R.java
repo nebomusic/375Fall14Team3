@@ -29,6 +29,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int LinearLayout1=0x7f090000;
         public static final int action_settings=0x7f090017;
         public static final int btnCoffee=0x7f090005;
@@ -53,6 +54,9 @@ public final class R {
         public static final int textView1=0x7f090003;
         public static final int textView2=0x7f090015;
         public static final int textView3=0x7f090016;
+=======
+        public static final int action_settings=0x7f090000;
+>>>>>>> 83b705db1437812961bd2d6f21b62884af3dd9ec
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
