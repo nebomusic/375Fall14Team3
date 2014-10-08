@@ -40,6 +40,48 @@ public Drink(boolean h,String t, String f, String tp, String d, int sz, String i
 public void setType(String t) {
 	type = t;
 }
+public void setFlavor(String f) {
+	flavor = f;
+}
+public void setTopping(String tp) {
+	topping = tp;
+}
+public void setDairy(String d) {
+	dairy = d;
+}
+public void setSize(int s) {
+	size = s;
+}
+public void setInstructions(String i) {
+	instructions = i;
+}
+public void setDate(Date d) {
+	date = d;
+}
+
+	// Accesors
+public boolean getHot() {
+	return hot;
+}
+public String getType() {
+	return type;
+}
+public String getFlavor() {
+	return flavor;
+}
+public String getTopping() {
+	return topping;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
