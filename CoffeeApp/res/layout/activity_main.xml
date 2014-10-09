@@ -17,8 +17,9 @@
 
         <Button
             android:id="@+id/btnHot"
-            android:layout_width="wrap_content"
+			android:layout_weight=".33"
             android:layout_height="wrap_content"
+            android:onClick="btnHotClicked"
             android:text="Hot" />
 
     </TableRow>
@@ -36,20 +37,23 @@
 
         <Button
             android:id="@+id/btnCoffee"
-            android:layout_width="wrap_content"
+			android:layout_weight=".2"
             android:layout_height="wrap_content"
+            android:onClick="coffeeClicked"
             android:text="Coffee" />
 
         <Button
             android:id="@+id/btnFrap"
-            android:layout_width="wrap_content"
+			android:layout_weight=".2"
             android:layout_height="wrap_content"
+            android:onClick="frapClicked"
             android:text="Frappachino" />
 
         <Button
             android:id="@+id/btnExpres"
-            android:layout_width="wrap_content"
+            android:layout_weight=".2"
             android:layout_height="wrap_content"
+            android:onClick="expresClicked"
             android:text="Expresso" />
 
     </TableRow>
@@ -60,22 +64,25 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnTall"
+			android:layout_weight=".2"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="tallClicked"
+            android:text="Tall" />
 
         <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnGrande"
+			android:layout_weight=".2"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="grandeClicked"
+            android:text="Grande" />
 
         <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnVenti"
+			android:layout_weight=".2"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="ventiClicked"
+            android:text="Venti" />
 
     </TableRow>
 
@@ -85,8 +92,8 @@
         android:layout_height="wrap_content" >
 
         <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="wrap_content"
+            android:id="@+id/spinnerFlavor"
+            android:layout_weight=".25"
             android:layout_height="wrap_content" />
 
     </TableRow>
@@ -97,8 +104,8 @@
         android:layout_height="wrap_content" >
 
         <Spinner
-            android:id="@+id/spinner2"
-            android:layout_width="wrap_content"
+            android:id="@+id/spinnerDairy"
+            android:layout_weight=".25"
             android:layout_height="wrap_content" />
 
     </TableRow>
@@ -109,10 +116,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnAddDrink"
+			android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="addDrinkClicked" 
+            android:text="Add Drink" />
 
     </TableRow>
 
@@ -122,10 +130,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button9"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnReset"
+			android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="resetDrink"
+            android:text="Reset Order" />
 
     </TableRow>
 
@@ -135,14 +144,14 @@
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textDrinksAdded"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="---" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:id="@+id/textCurrentDrink"
+            android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
