@@ -81,6 +81,9 @@ public int getSize() {
 public Date getDate() {
 	return date;
 }
+public boolean getServed () {
+	return served;
+}
 public void setServed(boolean s) {
 	served = s;
 }

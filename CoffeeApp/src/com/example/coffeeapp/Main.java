@@ -47,14 +47,14 @@ public class Main extends Activity {
 		btnFrap = (Button)findViewById(R.id.btnFrap);
 		btnExpres = (Button)findViewById(R.id.btnExpres);
 		btnTall = (Button)findViewById(R.id.btnTall);
-		btnGrande= (Button)findViewById(R.id.btnGrande);
+		btnGrande = (Button)findViewById(R.id.btnGrande);
 		btnVenti = (Button)findViewById(R.id.btnVenti);
 		spinnerFlavor = (Spinner)findViewById(R.id.spinnerFlavor);
 		spinnerDairy = (Spinner)findViewById(R.id.spinnerDairy);
-		btnAddDrink= (Button)findViewById(R.id.btnAddDrink);
-		btnResetDrink= (Button)findViewById(R.id.btnResetDrink);
-		textDrinksAdded= (TextView)findViewById(R.id.textDrinksAdded);
-		textCurrentDrink= (TextView)findViewById(R.id.textCurrentDrink);
+		btnAddDrink = (Button)findViewById(R.id.btnAddDrink);
+		btnResetDrink = (Button)findViewById(R.id.btnReset);
+		textDrinksAdded = (TextView)findViewById(R.id.textDrinksAdded);
+		textCurrentDrink = (TextView)findViewById(R.id.textCurrentDrink);
 		
 		ArrayAdapter<CharSequence> flavorAdapter = ArrayAdapter.createFromResource(this,
 				R.array.flavor_array, android.R.layout.simple_spinner_dropdown_item);
