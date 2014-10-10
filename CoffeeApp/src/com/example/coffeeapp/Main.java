@@ -133,7 +133,7 @@ public class Main extends Activity {
 		btnGrande.setBackgroundColor(Color.LTGRAY);
 		btnVenti.setBackgroundColor(Color.GREEN);
 	}
-	public void AddDrinkClicked (View v){
+	public void addDrinkClicked (View v){
 		currentDrink.setFlavor(String.valueOf(spinnerFlavor.getSelectedItem()));
 		currentDrink.setDairy(String.valueOf(spinnerDairy.getSelectedItem()));
 		orders.addDrink(currentDrink);
