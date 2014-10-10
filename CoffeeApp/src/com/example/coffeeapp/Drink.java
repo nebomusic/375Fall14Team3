@@ -49,8 +49,8 @@ public void setTopping(String tp) {
 public void setDairy(String d) {
 	dairy = d;
 }
-public void setSize(int s) {
-	size = s;
+public void setSize(int sz) {
+	size = sz;
 }
 public void setInstructions(String i) {
 	instructions = i;
@@ -75,7 +75,7 @@ public String getTopping() {
 public String getDairy() {
 	return dairy;
 }
-public String getSize() {
+public int getSize() {
 	return size;
 }
 public Date getDate() {
