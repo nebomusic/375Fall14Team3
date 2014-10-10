@@ -88,10 +88,6 @@ public void setServed(boolean s) {
 	served = s;
 }
 
-public boolean getServed() {
-	return served;
-}
-
 
 
 
