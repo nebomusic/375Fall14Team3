@@ -17,7 +17,7 @@ public class Main extends Activity {
 	private Orders orders;
 	private Drink currentDrink;
 	
-	// Fields for User Inteface Objects
+	// Fields for User Interface Objects
 	private Button btnHot;
 	private Button btnCoffee;
 	private Button btnFrap;
