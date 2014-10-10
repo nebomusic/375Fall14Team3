@@ -75,7 +75,7 @@ public String getTopping() {
 public String getDairy() {
 	return dairy;
 }
-public String getSize() {
+public int getSize() {
 	return size;
 }
 public Date getDate() {
@@ -83,6 +83,10 @@ public Date getDate() {
 }
 public void setServed(boolean s) {
 	served = s;
+}
+
+public boolean getServed() {
+	return served;
 }
 
 
