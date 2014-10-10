@@ -133,7 +133,7 @@ public class Main extends Activity {
 		btnGrande.setBackgroundColor(Color.LTGRAY);
 		btnVenti.setBackgroundColor(Color.GREEN);
 	}
-	public void AddDrinkClicked (View v){
+	public void addDrinkClicked (View v){
 		currentDrink.setFlavor(String.valueOf(spinnerFlavor.getSelectedItem()));
 		currentDrink.setDairy(String.valueOf(spinnerDairy.getSelectedItem()));
 		orders.addDrink(currentDrink);
@@ -143,7 +143,7 @@ public class Main extends Activity {
 
 	}
 
-	private void resetDrink(View v) {
+	public void resetDrink(View v) {
 		currentDrink = new Drink();
 		btnCoffee.setBackgroundColor(Color.LTGRAY);
 		btnFrap.setBackgroundColor(Color.LTGRAY);
@@ -155,11 +155,11 @@ public class Main extends Activity {
 	}
 
 	private void displayDrink(int i) {
-		String sOrder = "Just ordered:";
+		String sOrder = "Just ordered :";
 		Drink dDrink = orders.getDrink(i);
-		sOrder += String.valueOf (dDrink.getSize())+ "ounces of ";
-		sOrder += dDrink.getType() + "with";
-		sOrder += dDrink.getFlavor() + "and";
+		sOrder += String.valueOf (dDrink.getSize())+ " ounces of ";
+		sOrder += dDrink.getType() + " with ";
+		sOrder += dDrink.getFlavor() + " and ";
 		sOrder += dDrink.getDairy() + ".";
 		textCurrentDrink.setText(sOrder);
 	}
