@@ -82,20 +82,15 @@ public Date getDate() {
 	return date;
 }
 
-<<<<<<< HEAD
-public void setServed(boolean s) {
-	served = s;
-}
 
-
-=======
 public boolean getServed() {
 	return served;
->>>>>>> 3103627f00892d57ec087d8b1ff529e4c425ed88
+
 }
 
 public void setServed(boolean s) {
 	served = s;
+}
 }
 
 
