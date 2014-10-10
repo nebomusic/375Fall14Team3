@@ -81,8 +81,14 @@ public int getSize() {
 public Date getDate() {
 	return date;
 }
+public boolean getServed () {
+	return served;
+}
 public void setServed(boolean s) {
 	served = s;
+}
+
+
 }
 
 
@@ -102,4 +108,4 @@ public void setServed(boolean s) {
 
 
 
-} // end drink class
+ // end drink class

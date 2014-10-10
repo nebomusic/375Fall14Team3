@@ -5,8 +5,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
-
-    
     <string-array name = "flavor_array">
         <item>None</item>
         <item>Mocha</item>
@@ -21,4 +19,5 @@
         <item>Soy</item>
     </string-array>
 
-</resources>
+
+ </resources>

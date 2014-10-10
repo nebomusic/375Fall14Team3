@@ -17,7 +17,7 @@ public class Main extends Activity {
 	private Orders orders;
 	private Drink currentDrink;
 	
-	// Fields for User Inteface Objects
+	// Fields for User Interface Objects
 	private Button btnHot;
 	private Button btnCoffee;
 	private Button btnFrap;
@@ -47,14 +47,14 @@ public class Main extends Activity {
 		btnFrap = (Button)findViewById(R.id.btnFrap);
 		btnExpres = (Button)findViewById(R.id.btnExpres);
 		btnTall = (Button)findViewById(R.id.btnTall);
-		btnGrande= (Button)findViewById(R.id.btnGrande);
+		btnGrande = (Button)findViewById(R.id.btnGrande);
 		btnVenti = (Button)findViewById(R.id.btnVenti);
 		spinnerFlavor = (Spinner)findViewById(R.id.spinnerFlavor);
 		spinnerDairy = (Spinner)findViewById(R.id.spinnerDairy);
-		btnAddDrink= (Button)findViewById(R.id.btnAddDrink);
-		btnResetDrink= (Button)findViewById(R.id.btnResetDrink);
-		textDrinksAdded= (TextView)findViewById(R.id.textDrinksAdded);
-		textCurrentDrink= (TextView)findViewById(R.id.textCurrentDrink);
+		btnAddDrink = (Button)findViewById(R.id.btnAddDrink);
+		btnResetDrink = (Button)findViewById(R.id.btnReset);
+		textDrinksAdded = (TextView)findViewById(R.id.textDrinksAdded);
+		textCurrentDrink = (TextView)findViewById(R.id.textCurrentDrink);
 		
 		ArrayAdapter<CharSequence> flavorAdapter = ArrayAdapter.createFromResource(this,
 				R.array.flavor_array, android.R.layout.simple_spinner_dropdown_item);
@@ -74,17 +74,6 @@ public class Main extends Activity {
 		return true;
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
 	public void btnHotClicked(View v){
 		 if(btnHot.getText() == "Hot"){
 			 btnHot.setText("Cold");
@@ -133,7 +122,7 @@ public class Main extends Activity {
 		btnGrande.setBackgroundColor(Color.LTGRAY);
 		btnVenti.setBackgroundColor(Color.GREEN);
 	}
-	public void AddDrinkClicked (View v){
+	public void addDrinkClicked (View v){
 		currentDrink.setFlavor(String.valueOf(spinnerFlavor.getSelectedItem()));
 		currentDrink.setDairy(String.valueOf(spinnerDairy.getSelectedItem()));
 		orders.addDrink(currentDrink);
