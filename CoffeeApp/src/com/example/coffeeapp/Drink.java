@@ -75,11 +75,14 @@ public String getTopping() {
 public String getDairy() {
 	return dairy;
 }
-public String getSize() {
+public int getSize() {
 	return size;
 }
 public Date getDate() {
 	return date;
+}
+public boolean getServed () {
+	return served;
 }
 public void setServed(boolean s) {
 	served = s;
