@@ -144,7 +144,7 @@ public class Main extends Activity {
 	}
 
 	private void displayDrink(int i) {
-		String sOrder = "Just ordered :";
+		String sOrder = "Just ordered : ";
 		Drink dDrink = orders.getDrink(i);
 		sOrder += String.valueOf (dDrink.getSize())+ " ounces of ";
 		sOrder += dDrink.getType() + " with ";
