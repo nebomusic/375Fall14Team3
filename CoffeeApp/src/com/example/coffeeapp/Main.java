@@ -89,37 +89,37 @@ public class Main extends Activity {
 	public void coffeeClicked(View v){
 		currentDrink.setType("Coffee");
 		btnCoffee.setBackgroundColor(Color.YELLOW);
-		btnFrap.setBackgroundColor(Color.LTGRAY);
-		btnExpres.setBackgroundColor(Color.LTGRAY);
+		btnFrap.setBackgroundColor(0xc2a385);
+		btnExpres.setBackgroundColor(0xc2a385);
 	}
 	public void frapClicked(View v){
 		currentDrink.setType("Frappacino");
-		btnCoffee.setBackgroundColor(Color.LTGRAY);
+		btnCoffee.setBackgroundColor(0xc2a385);
 		btnFrap.setBackgroundColor(Color.YELLOW);
-		btnExpres.setBackgroundColor(Color.LTGRAY);
+		btnExpres.setBackgroundColor(0xc2a385);
 	}
 	public void expresClicked(View v){
 		currentDrink.setType("Expresso");
-		btnCoffee.setBackgroundColor(Color.LTGRAY);
-		btnFrap.setBackgroundColor(Color.LTGRAY);
+		btnCoffee.setBackgroundColor(0xc2a385);
+		btnFrap.setBackgroundColor(0xc2a385);
 		btnExpres.setBackgroundColor(Color.YELLOW);
 	}
 	public void tallClicked(View v){
 		currentDrink.setSize(8);
 		btnTall.setBackgroundColor(Color.GREEN);
-		btnGrande.setBackgroundColor(Color.LTGRAY);
-		btnVenti.setBackgroundColor(Color.LTGRAY);
+		btnGrande.setBackgroundColor(0xc2a385);
+		btnVenti.setBackgroundColor(0xc2a385);
 	}
 	public void grandeClicked(View v){
 		currentDrink.setSize(12);
-		btnTall.setBackgroundColor(Color.LTGRAY);
+		btnTall.setBackgroundColor(0xc2a385);
 		btnGrande.setBackgroundColor(Color.GREEN);
-		btnVenti.setBackgroundColor(Color.LTGRAY);
+		btnVenti.setBackgroundColor(0xc2a385);
 	}
 	public void ventiClicked(View v){
 		currentDrink.setSize(20);
-		btnTall.setBackgroundColor(Color.LTGRAY);
-		btnGrande.setBackgroundColor(Color.LTGRAY);
+		btnTall.setBackgroundColor(0xc2a385);
+		btnGrande.setBackgroundColor(0xc2a385);
 		btnVenti.setBackgroundColor(Color.GREEN);
 	}
 	public void addDrinkClicked (View v){
