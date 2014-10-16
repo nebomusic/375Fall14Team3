@@ -128,19 +128,34 @@ public class Main extends Activity {
 		orders.addDrink(currentDrink);
 		textDrinksAdded.setText(String.valueOf(orders.getNumDrinks()));
 		displayDrink(orders.getNumDrinks()-1);
-		resetDrink(v);
+		resetDrink();
 
 	}
 
-	public void resetDrink(View v) {
+	public void resetDrink() {
 		currentDrink = new Drink();
-		btnCoffee.setBackgroundColor(Color.LTGRAY);
-		btnFrap.setBackgroundColor(Color.LTGRAY);
-		btnExpres.setBackgroundColor(Color.LTGRAY);
-		btnTall.setBackgroundColor(Color.LTGRAY);
-		btnGrande.setBackgroundColor(Color.LTGRAY);
-		btnVenti.setBackgroundColor(Color.LTGRAY);
-		
+		btnCoffee.setBackgroundColor(0xc2a385);
+		btnFrap.setBackgroundColor(0xc2a385);
+		btnExpres.setBackgroundColor(0xc2a385);
+		btnTall.setBackgroundColor(0xc2a385);
+		btnGrande.setBackgroundColor(0xc2a385);
+		btnVenti.setBackgroundColor(0xc2a385);
+		spinnerFlavor.setSelection(0);
+		spinnerDairy.setSelection(0);
+	}
+	
+	public void resetOrder(View v) {
+		currentDrink = new Drink();
+		btnCoffee.setBackgroundColor(0xc2a385);
+		btnFrap.setBackgroundColor(0xc2a385);
+		btnExpres.setBackgroundColor(0xc2a385);
+		btnTall.setBackgroundColor(0xc2a385);
+		btnGrande.setBackgroundColor(0xc2a385);
+		btnVenti.setBackgroundColor(0xc2a385);
+		spinnerFlavor.setSelection(0);
+		spinnerDairy.setSelection(0);
+		textCurrentDrink.setText("");
+		textDrinksAdded.setText("");
 	}
 
 	private void displayDrink(int i) {

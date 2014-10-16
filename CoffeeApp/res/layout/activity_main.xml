@@ -134,7 +134,7 @@
             android:id="@+id/btnReset"
 			android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:onClick="resetDrink"
+            android:onClick="resetOrder"
             android:text="Reset Order" />
 
     </TableRow>
@@ -154,7 +154,7 @@
             android:id="@+id/textCurrentDrink"
             android:layout_weight=".75"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="---" />
 
     </TableRow>
 
