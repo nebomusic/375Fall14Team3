@@ -79,7 +79,30 @@
     <TableRow
         android:id="@+id/tableRow5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textBirthday"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:text="Birthdate:" />
+
+        <EditText
+            android:id="@+id/editBirthday"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:gravity="left" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
         <TextView
             android:id="@+id/textWeight"
@@ -91,7 +114,10 @@
             android:id="@+id/editWeight"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:ems="10" />
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
 
         <TextView
             android:id="@+id/textHeight"
@@ -107,7 +133,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow6"
+        android:id="@+id/tableRow7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -120,15 +146,17 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow7"
+        android:id="@+id/tableRow8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
 
         <Button
-            android:id="@+id/buttonSubmit"
+            android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="btnSubmitClicked"
             android:text="Submit" />
 
     </TableRow>
