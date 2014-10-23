@@ -29,36 +29,38 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f090000;
-        public static final int action_settings=0x7f09001e;
-        public static final int btnAddFamily=0x7f09001d;
-        public static final int btnPerson1=0x7f090018;
-        public static final int btnPerson2=0x7f090019;
-        public static final int btnPerson3=0x7f09001a;
-        public static final int btnPerson4=0x7f09001b;
-        public static final int btnPerson5=0x7f09001c;
-        public static final int btnSubmit=0x7f090016;
-        public static final int editBirthday=0x7f09000d;
-        public static final int editHeight=0x7f090012;
-        public static final int editWeight=0x7f090010;
-        public static final int radioFemale=0x7f090006;
-        public static final int radioGroup1=0x7f090004;
-        public static final int radioMale=0x7f090005;
-        public static final int seekAge=0x7f090008;
-        public static final int spinnerColor=0x7f090014;
+        public static final int action_settings=0x7f090020;
+        public static final int btnAddFamily=0x7f09001f;
+        public static final int btnPerson1=0x7f09001a;
+        public static final int btnPerson2=0x7f09001b;
+        public static final int btnPerson3=0x7f09001c;
+        public static final int btnPerson4=0x7f09001d;
+        public static final int btnPerson5=0x7f09001e;
+        public static final int btnSubmit=0x7f090018;
+        public static final int editBirthday=0x7f09000f;
+        public static final int editHeight=0x7f090014;
+        public static final int editName=0x7f090004;
+        public static final int editWeight=0x7f090012;
+        public static final int radioFemale=0x7f090008;
+        public static final int radioGroup1=0x7f090006;
+        public static final int radioMale=0x7f090007;
+        public static final int seekAge=0x7f09000a;
+        public static final int spinnerColor=0x7f090016;
         public static final int tableRow1=0x7f090001;
         public static final int tableRow2=0x7f090003;
-        public static final int tableRow3=0x7f090007;
+        public static final int tableRow3=0x7f090005;
         public static final int tableRow4=0x7f090009;
         public static final int tableRow5=0x7f09000b;
-        public static final int tableRow6=0x7f09000e;
-        public static final int tableRow7=0x7f090013;
+        public static final int tableRow6=0x7f09000d;
+        public static final int tableRow7=0x7f090010;
         public static final int tableRow8=0x7f090015;
-        public static final int textAge=0x7f09000a;
-        public static final int textBirthday=0x7f09000c;
-        public static final int textHeight=0x7f090011;
-        public static final int textMenu=0x7f090017;
-        public static final int textView1=0x7f090002;
-        public static final int textWeight=0x7f09000f;
+        public static final int tableRow9=0x7f090017;
+        public static final int textAdd=0x7f090002;
+        public static final int textAge=0x7f09000c;
+        public static final int textBirthday=0x7f09000e;
+        public static final int textHeight=0x7f090013;
+        public static final int textMenu=0x7f090019;
+        public static final int textWeight=0x7f090011;
     }
     public static final class layout {
         public static final int activity_add_family=0x7f030000;
@@ -69,10 +71,9 @@ public final class R {
         public static final int main=0x7f080001;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
+        public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
-        public static final int title_activity_add_family=0x7f050003;
+        public static final int title_activity_add_family=0x7f050002;
     }
     public static final class style {
         /** 

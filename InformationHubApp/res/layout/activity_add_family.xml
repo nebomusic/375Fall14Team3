@@ -17,15 +17,31 @@
         android:gravity="center" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add Family Member"
             android:textAppearance="?android:attr/textAppearanceLarge" />
+
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name"
+            android:inputType="textPersonName" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -51,9 +67,10 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow3"
+        android:id="@+id/tableRow4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
         <SeekBar
             android:id="@+id/seekAge"
@@ -63,7 +80,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow4"
+        android:id="@+id/tableRow5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -77,7 +94,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow5"
+        android:id="@+id/tableRow6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -91,15 +108,18 @@
 
         <EditText
             android:id="@+id/editBirthday"
-            android:layout_weight="0.5"
             android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
             android:inputType="date"
-            android:gravity="left" />
+            android:hint="MM/DD/YYYY" >
 
+            <requestFocus />
+        </EditText>
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow6"
+        android:id="@+id/tableRow7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -114,10 +134,7 @@
             android:id="@+id/editWeight"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:ems="10" >
-
-            <requestFocus />
-        </EditText>
+            android:ems="10" />
 
         <TextView
             android:id="@+id/textHeight"
@@ -133,7 +150,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow7"
+        android:id="@+id/tableRow8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -146,7 +163,7 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow8"
+        android:id="@+id/tableRow9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" >
@@ -155,7 +172,6 @@
             android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:onClick="btnSubmitClicked"
             android:text="Submit" />
 

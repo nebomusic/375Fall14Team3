@@ -1,6 +1,7 @@
 package com.example.informationhubapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +34,15 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    
+    public void handleClick(View v) {
+    	switch (v.getId()) {
+    	case R.id.btnAddFamily:
+    		Intent intentAdd = new Intent(this, AddFamily.class);
+    		startActivity(intentAdd);
+    		break;
+    	}
     }
     
 }

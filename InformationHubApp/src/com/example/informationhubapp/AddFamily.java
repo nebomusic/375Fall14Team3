@@ -2,6 +2,7 @@ package com.example.informationhubapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.Menu;
@@ -20,6 +21,7 @@ public class AddFamily extends Activity {
 	
 	private FamilyMember familyMember;
 	
+	private EditText editName;
 	private RadioButton radioMale;
 	private RadioButton radioFemale;
 	private SeekBar seekAge;
@@ -42,6 +44,7 @@ public class AddFamily extends Activity {
 		
 		familyMember = new FamilyMember();
 		
+		editName = (EditText)findViewById(R.id.editName);
 		radioMale = (RadioButton)findViewById(R.id.radioMale);
 		radioFemale = (RadioButton)findViewById(R.id.radioFemale);
 		seekAge = (SeekBar)findViewById(R.id.seekAge);
@@ -58,7 +61,7 @@ public class AddFamily extends Activity {
 		btnPerson5 = (Button)findViewById(R.id.btnPerson5);
 		
 		seekAge.setMax(100);
-		seekAge.setProgress(0);
+		seekAge.setProgress(5);
 		seekAge.setOnSeekBarChangeListener(seekAgeChangeListener);
 		
 		ArrayAdapter<CharSequence> colorAdapter = ArrayAdapter.createFromResource(this,
@@ -90,7 +93,7 @@ public class AddFamily extends Activity {
 	private OnSeekBarChangeListener seekAgeChangeListener = new OnSeekBarChangeListener () {
 
 		@Override
-		public void onProgressChanged(SeekBar seekBar, int progress,
+		public void onProgressChanged(SeekBar seekAge, int progress,
 				boolean fromUser) {
 			
 			int age = seekAge.getProgress();
@@ -99,18 +102,21 @@ public class AddFamily extends Activity {
 		}
 
 		@Override
-		public void onStartTrackingTouch(SeekBar seekBar) {
+		public void onStartTrackingTouch(SeekBar seekAge) {
 			
 		}
 
 		@Override
-		public void onStopTrackingTouch(SeekBar seekBar) {
+		public void onStopTrackingTouch(SeekBar seekAge) {
 			
 		}
 		
 	};
 	
 	public void btnSubmitClicked(View v) {
+		// Name
+		String name = editName.getText().toString();
+		familyMember.setName(name);
 		// Gender
 		if (radioMale.isChecked()) {
 			familyMember.setGender(true);
@@ -122,17 +128,14 @@ public class AddFamily extends Activity {
 		int age = seekAge.getProgress();
 		familyMember.setAge(age);
 		// Birthday
-		Editable birthday = editBirthday.getText();
-		String birthdayString = String.valueOf(birthday);
-		familyMember.setBirthday(birthdayString);
+		String birthday = editBirthday.getText().toString();
+		familyMember.setBirthday(birthday);
 		// Weight
-		Editable weight = editWeight.getText();
-		String weightString = String.valueOf(weight);
-		familyMember.setWeight(weightString);
+		String weight = editWeight.getText().toString();
+		familyMember.setWeight(weight);
 		// Height
-		Editable height = editHeight.getText();
-		String heightString = String.valueOf(height);
-		familyMember.setHeight(heightString);
+		String height = editHeight.getText().toString();
+		familyMember.setHeight(height);
 		// Color
 		familyMember.setColor(String.valueOf(spinnerColor.getSelectedItem()));
 		// Switch Intents
@@ -141,7 +144,131 @@ public class AddFamily extends Activity {
 		// Change Main Activity
 		if (btnPerson1.getVisibility() == View.INVISIBLE) {
 			btnPerson1.setVisibility(View.VISIBLE);
-			// TODO ADD NAME!!!!!!!!!!!!!!!!!
+			btnPerson1.setText(name + "'s Info");
+			String color = String.valueOf(spinnerColor.getSelectedItem());
+			if (color == "Red") {
+				btnPerson1.setBackgroundColor(Color.RED);
+			}
+			if (color == "Blue") {
+				btnPerson1.setBackgroundColor(Color.BLUE);
+			}
+			if (color == "Cyan") {
+				btnPerson1.setBackgroundColor(Color.CYAN);
+			}
+			if (color == "Green") {
+				btnPerson1.setBackgroundColor(Color.GREEN);
+			}
+			if (color == "Yellow") {
+				btnPerson1.setBackgroundColor(Color.YELLOW);
+			}
+			if (color == "Magenta") {
+				btnPerson1.setBackgroundColor(Color.MAGENTA);
+			}
+		} // end if
+		
+		if (btnPerson1.getVisibility() == View.VISIBLE) {
+			if (btnPerson2.getVisibility() == View.INVISIBLE) {
+				btnPerson2.setVisibility(View.VISIBLE);
+				String color = String.valueOf(spinnerColor.getSelectedItem());
+				btnPerson2.setText(name + "'s Info");
+				if (color == "Red") {
+					btnPerson2.setBackgroundColor(Color.RED);
+				}
+				if (color == "Blue") {
+					btnPerson2.setBackgroundColor(Color.BLUE);
+				}
+				if (color == "Cyan") {
+					btnPerson2.setBackgroundColor(Color.CYAN);
+				}
+				if (color == "Green") {
+					btnPerson2.setBackgroundColor(Color.GREEN);
+				}
+				if (color == "Yellow") {
+					btnPerson2.setBackgroundColor(Color.YELLOW);
+				}
+				if (color == "Magenta") {
+					btnPerson2.setBackgroundColor(Color.MAGENTA);
+				}
+			} // end if
+			
+			if (btnPerson2.getVisibility() == View.VISIBLE) {
+				if (btnPerson3.getVisibility() == View.INVISIBLE) {
+					btnPerson3.setVisibility(View.VISIBLE);
+					String color = String.valueOf(spinnerColor.getSelectedItem());
+					btnPerson3.setText(name + "'s Info");
+					if (color == "Red") {
+						btnPerson3.setBackgroundColor(Color.RED);
+					}
+					if (color == "Blue") {
+						btnPerson3.setBackgroundColor(Color.BLUE);
+					}
+					if (color == "Cyan") {
+						btnPerson3.setBackgroundColor(Color.CYAN);
+					}
+					if (color == "Green") {
+						btnPerson3.setBackgroundColor(Color.GREEN);
+					}
+					if (color == "Yellow") {
+						btnPerson3.setBackgroundColor(Color.YELLOW);
+					}
+					if (color == "Magenta") {
+						btnPerson3.setBackgroundColor(Color.MAGENTA);
+					}
+				} // end if
+				if (btnPerson3.getVisibility() == View.VISIBLE) {
+					if (btnPerson4.getVisibility() == View.INVISIBLE) {
+						btnPerson4.setVisibility(View.VISIBLE);
+						String color = String.valueOf(spinnerColor.getSelectedItem());
+						btnPerson4.setText(name + "'s Info");
+						if (color == "Red") {
+							btnPerson4.setBackgroundColor(Color.RED);
+						}
+						if (color == "Blue") {
+							btnPerson4.setBackgroundColor(Color.BLUE);
+						}
+						if (color == "Cyan") {
+							btnPerson4.setBackgroundColor(Color.CYAN);
+						}
+						if (color == "Green") {
+							btnPerson4.setBackgroundColor(Color.GREEN);
+						}
+						if (color == "Yellow") {
+							btnPerson4.setBackgroundColor(Color.YELLOW);
+						}
+						if (color == "Magenta") {
+							btnPerson4.setBackgroundColor(Color.MAGENTA);
+						}
+					} // end if
+					if (btnPerson4.getVisibility() == View.VISIBLE) {
+						if (btnPerson5.getVisibility() == View.INVISIBLE) {
+							btnPerson5.setVisibility(View.VISIBLE);
+							String color = String.valueOf(spinnerColor.getSelectedItem());
+							btnPerson5.setText(name + "'s Info");
+							if (color == "Red") {
+								btnPerson5.setBackgroundColor(Color.RED);
+							}
+							if (color == "Blue") {
+								btnPerson5.setBackgroundColor(Color.BLUE);
+							}
+							if (color == "Cyan") {
+								btnPerson5.setBackgroundColor(Color.CYAN);
+							}
+							if (color == "Green") {
+								btnPerson5.setBackgroundColor(Color.GREEN);
+							}
+							if (color == "Yellow") {
+								btnPerson5.setBackgroundColor(Color.YELLOW);
+							}
+							if (color == "Magenta") {
+								btnPerson5.setBackgroundColor(Color.MAGENTA);
+							}
+						} // end if
+						if (btnPerson5.getVisibility() == View.VISIBLE) {
+							btnSubmit.setVisibility(View.INVISIBLE);
+						}
+					}
+				}
+			}
 		}
 	}
 	

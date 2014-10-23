@@ -2,6 +2,7 @@ package com.example.informationhubapp;
 
 public class FamilyMember {
 	
+	private String name;
 	private boolean gender;
 	private int age;
 	private String birthday;
@@ -13,13 +14,18 @@ public class FamilyMember {
 		
 	}
 	
-	public FamilyMember(boolean g, int a, String b, String w, String h, String c) {
+	public FamilyMember(String n, boolean g, int a, String b, String w, String h, String c) {
+		name = n;
 		gender = g;
 		age = a;
 		birthday = b;
 		weight = w;
 		height = h;
 		color = c;
+	}
+	
+	public void setName(String n) {
+		name = n;
 	}
 	
 	public void setGender(boolean g) {
@@ -44,6 +50,10 @@ public class FamilyMember {
 	
 	public void setColor(String c) {
 		color = c;
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	public boolean getGender() {
