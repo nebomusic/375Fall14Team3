@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,6 +35,7 @@ public class AddFamily extends Activity {
 	private Button btnPerson3;
 	private Button btnPerson4;
 	private Button btnPerson5;
+	private Button btnAddFamily;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +59,7 @@ public class AddFamily extends Activity {
 		btnPerson3 = (Button)findViewById(R.id.btnPerson3);
 		btnPerson4 = (Button)findViewById(R.id.btnPerson4);
 		btnPerson5 = (Button)findViewById(R.id.btnPerson5);
+		btnAddFamily = (Button)findViewById(R.id.btnAddFamily);
 		
 		seekAge.setMax(100);
 		seekAge.setProgress(5);
@@ -264,7 +265,7 @@ public class AddFamily extends Activity {
 							}
 						} // end if
 						if (btnPerson5.getVisibility() == View.VISIBLE) {
-							btnSubmit.setVisibility(View.INVISIBLE);
+							btnAddFamily.setVisibility(View.INVISIBLE);
 						}
 					}
 				}
