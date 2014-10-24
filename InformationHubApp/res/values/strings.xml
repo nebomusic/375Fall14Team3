@@ -4,8 +4,8 @@
     <string name="app_name">InformationHubApp</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_family">AddFamily</string>
-    
-    <string-array name = "color_array">
+
+    <string-array name="color_array">
         <item>None</item>
         <item>Red</item>
         <item>Cyan</item>
@@ -14,5 +14,10 @@
         <item>Blue</item>
         <item>Magenta</item>
     </string-array>
+
+    <string name="title_activity_activity_husband">ActivityHusband</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity_wife">ActivityWife</string>
+    <string name="title_activity_activity_daughter">ActivityDaughter</string>
 
 </resources>

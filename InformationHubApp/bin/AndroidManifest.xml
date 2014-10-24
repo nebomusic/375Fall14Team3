@@ -26,6 +26,18 @@
             android:name=".AddFamily"
             android:label="@string/title_activity_add_family" >
         </activity>
+        <activity
+            android:name=".ActivityHusband"
+            android:label="@string/title_activity_activity_husband" >
+        </activity>
+        <activity
+            android:name=".ActivityWife"
+            android:label="@string/title_activity_activity_wife" >
+        </activity>
+        <activity
+            android:name=".ActivityDaughter"
+            android:label="@string/title_activity_activity_daughter" >
+        </activity>
     </application>
 
 </manifest>
