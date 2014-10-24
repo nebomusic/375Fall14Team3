@@ -26,6 +26,10 @@
             android:name=".AddFamily"
             android:label="@string/title_activity_add_family" >
         </activity>
+        <activity
+            android:name=".ActivityHMed"
+            android:label="@string/title_activity_activity_hmed" >
+        </activity>
     </application>
 
 </manifest>
