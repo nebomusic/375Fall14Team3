@@ -112,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="handleClick"
+            android:onClick="btnAddFamilyClicked"
             android:text="Add Family Member" />
 
     </TableRow>
