@@ -33,6 +33,7 @@
             android:id="@+id/buttonMed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick= "handleClick"
             android:text="Medical Info" />
 
     </TableRow>
@@ -46,6 +47,7 @@
             android:id="@+id/buttonFin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick = "onClick"
             android:text="Financial Info" />
 
     </TableRow>
@@ -56,10 +58,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:id="@+id/buttonOth"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick = "handleClick"
+            android:text="Other Info" />
 
     </TableRow>
 
