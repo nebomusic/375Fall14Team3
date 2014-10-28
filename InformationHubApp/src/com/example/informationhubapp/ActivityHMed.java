@@ -14,6 +14,8 @@ public class ActivityHMed extends Activity {
 	private EditText editText;
 	private Button buttonAddInfo;
 	private Button buttonReset;
+	private Button buttonDate;
+	private EditText editDate;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,10 @@ public class ActivityHMed extends Activity {
 		editText= (EditText)findViewById(R.id.editText);
 		buttonAddInfo= (Button)findViewById(R.id.buttonAddInfo);
 		buttonReset= (Button)findViewById(R.id.buttonReset);
-		textView1= (TextView)findViewById (R.id.textView);
+		textView1= (TextView)findViewById (R.id.textView1);
+		buttonDate= (Button) findViewById (R.id.buttonDate);
+		editDate= (EditText)findViewById (R.id.editDate);
+		
 	}
 
 	@Override
@@ -47,6 +52,8 @@ public class ActivityHMed extends Activity {
 		buttonAddInfo.setText(String.valueOf(editText));
 	}
 	public void displayInfo(){
-		textView1.setText((CharSequence) editText);
+		String sInfo = buttonDate();
+		sInfo += () + ".";
+		textView1.setText(sInfo);
 	}
 }

@@ -53,17 +53,16 @@
         android:layout_height="wrap_content" >
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="date" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/buttonDate"
             android:layout_weight=".5"
             android:layout_height="wrap_content"
-            android:onClick= ""
+            android:onClick= "btnDateClciked"
             android:text="Add Date" />
 
     </TableRow>
