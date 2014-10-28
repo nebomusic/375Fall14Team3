@@ -12,6 +12,12 @@ public class ActivityDaughter extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity_daughter);
 	}
+	@Override
+	protected void onResume() {
+		super.onResume();
+		setContentView(R.layout.activity_activity_daughter);
+	}
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -31,4 +37,16 @@ public class ActivityDaughter extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	public void handleClick(View v) {
+		Intent intent = new Intent(this, ActivityDMed.class);
+		startActivity(intent);
+	}
+	public void handleClick(View v) {
+		Intent intent = new Intent(this, ActivityDFin.class);
+		startActivity(intent);
+		)
+	public void handleClick(View v) {
+		Intent intent = new Intent(this, ActivityDOth.class);
+		startActivity(intent);
+	
 }

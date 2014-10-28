@@ -12,6 +12,12 @@ public class ActivityHusband extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_activity_husband);
 	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		setContentView(R.layout.activity_activity_husband);
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -31,4 +37,26 @@ public class ActivityHusband extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void handleClick(View v) {
+		Intent intent = new Intent(this, ActivityHMed.class);
+		startActivity(intent);
+	}
+	public void handleClick(View v) {
+		Intent intent = new Intent(this, ActivityHFin.class);
+		startActivity(intent);
+		)
+	public void handleClick(View v) {
+		Intent intent = new Intent(this, ActivityHOth.class);
+		startActivity(intent);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}	
 }
