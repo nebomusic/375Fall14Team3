@@ -4,24 +4,31 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
-public class ActivityWife extends Activity {
-
+public class ActivityHMed extends Activity {
+	private TextView textView1;
+	private EditText editText;
+	private Button buttonAddInfo;
+	private Button buttonReset;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_activity_wife);
-	}
-	@Override
-	protected void onResume() {
-		super.onResume();
-		setContentView(R.layout.activity_activity_wife);
+		setContentView(R.layout.activity_activity_hmed);
+		editText= (EditText)findViewById(R.id.editText);
+		buttonAddInfo= (Button)findViewById(R.id.buttonAddInfo);
+		buttonReset= (Button)findViewById(R.id.buttonReset);
+		textView1= (TextView)findViewById (R.id.textView);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_wife, menu);
+		getMenuInflater().inflate(R.menu.activity_hmed, menu);
 		return true;
 	}
 
@@ -36,17 +43,10 @@ public class ActivityWife extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	public void handleClick(View v) {
-		Intent intent = new Intent(this, ActivityWMed.class);
-		startActivity(intent);
+	public void addInfoClicked (View v){
+		buttonAddInfo.setText(String.valueOf(editText));
 	}
-	public void handleClick(View v) {
-		Intent intent = new Intent(this, ActivityWFin.class);
-		startActivity(intent);
-		)
-	public void handleClick(View v) {
-		Intent intent = new Intent(this, ActivityWOth.class);
-		startActivity(intent);
+	public void displayInfo(){
+		textView1.setText((CharSequence) editText);
 	}
-	
 }

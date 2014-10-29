@@ -10,4 +10,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.informationhubapp.ActivityWife" >
 
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:gravity= "center"
+            android:layout_height="wrap_content"
+            android:text="Wife's Information" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonMed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "handleClick"
+            android:text="Medical Info" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "handleClick"
+            android:text="Financial Info" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonOth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick = "handleClick"
+            android:text="Other Info" />
+
+    </TableRow>
+
 </LinearLayout>

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.informationhubapp.ActivityHusband" >
+    tools:context="com.example.informationhubapp.ActivityHMed" >
 
     <TableRow
         android:id="@+id/tableRow1"
@@ -17,10 +17,10 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="match_parent"
-            android:gravity = "center"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Husband's Information" />
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </TableRow>
 
@@ -29,12 +29,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
-        <Button
-            android:id="@+id/buttonMed"
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/editText"
+            android:layout_weight=".5"
             android:layout_height="wrap_content"
-            android:onClick= "handleClick"
-            android:text="Medical Info" />
+             >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/buttonAddInfo"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:onClick= "btnAddInfoClicked"
+            android:text="Add Info" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_weight=".5"
+            android:layout_height="wrap_content"
+            android:onClick= ""
+            android:text="Add Date" />
 
     </TableRow>
 
@@ -44,25 +74,11 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/buttonFin"
-            android:layout_width="match_parent"
+            android:id="@+id/buttonReset"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:onClick = "onClick"
-            android:text="Financial Info" />
-
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <Button
-            android:id="@+id/buttonOth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick = "handleClick"
-            android:text="Other Info" />
+            android:onClick = "btnResetClicked"
+            android:text="Reset" />
 
     </TableRow>
 

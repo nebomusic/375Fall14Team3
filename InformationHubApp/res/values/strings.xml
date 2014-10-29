@@ -15,8 +15,10 @@
         <item>Magenta</item>
     </string-array>
 
+    <string name="title_activity_activity_hmed">ActivityHMed</string>
+
     <string name="title_activity_activity_husband">ActivityHusband</string>
-    <string name="hello_world">Hello world!</string>
+
     <string name="title_activity_activity_wife">ActivityWife</string>
     <string name="title_activity_activity_daughter">ActivityDaughter</string>
 
