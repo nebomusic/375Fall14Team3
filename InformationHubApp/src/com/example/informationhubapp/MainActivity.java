@@ -94,8 +94,6 @@ public class MainActivity extends Activity {
 	};
 	
 	public void btnSubmitClicked(View v) {
-		// Change Screen
-		screenMain();
 		
 		// Add Family Member
 		familyList.addFamilyMember(familyMember);
@@ -125,181 +123,151 @@ public class MainActivity extends Activity {
 		// Color
 		familyMember.setColor(String.valueOf(spinnerColor.getSelectedItem()));
 		// Change Main Activity
-		if (btnPerson1.getVisibility() == View.INVISIBLE) {
-			btnPerson1.setVisibility(View.VISIBLE);
-			btnPerson1.setText(name + "'s Info");
-			String color = String.valueOf(spinnerColor.getSelectedItem());
-			if (color != "Red") {
-				if (color == "Blue") {
-					btnPerson1.setBackgroundColor(Color.BLUE);
+		screenMain();
+		// BtnPerson5 VISIBLE
+		if (btnPerson5.getVisibility() == View.VISIBLE) {
+			btnAddFamily.setVisibility(View.INVISIBLE);
+		}
+		// BtnPerson5 INVISIBLE
+		if (btnPerson5.getVisibility() == View.INVISIBLE) {
+			// BtnPerson4 VISIBLE
+			if (btnPerson4.getVisibility() == View.VISIBLE) {
+				btnPerson5.setVisibility(View.VISIBLE);
+				btnPerson5.setText(name + "'s Info");
+				String color = familyMember.getColor();
+				if (color.equals("Red")) {
+					btnPerson5.setBackgroundColor(Color.RED);
 				}
-				if (color != "Blue") {
-						if (color == "Cyan") {
-							btnPerson1.setBackgroundColor(Color.CYAN);
+				if (color.equals("Blue")) {
+					btnPerson5.setBackgroundColor(Color.RED);
+				}
+				if (color.equals("Cyan")) {
+					btnPerson5.setBackgroundColor(Color.CYAN);
+				}
+				if (color.equals("Yellow")) {
+					btnPerson5.setBackgroundColor(Color.YELLOW);
+				}
+				if (color.equals("Green")) {
+					btnPerson5.setBackgroundColor(Color.GREEN);
+				}
+				if (color.equals("Magenta")) {
+					btnPerson5.setBackgroundColor(Color.MAGENTA);
+				}
+								
+						} // end BtnPerson4 VISIBLE
+			// BtnPerson4 INVISIBLE
+			if (btnPerson4.getVisibility() == View.INVISIBLE) {
+				// BtnPerson3 VISIBLE
+				if (btnPerson3.getVisibility() == View.VISIBLE) {
+					btnPerson4.setVisibility(View.VISIBLE);
+					btnPerson4.setText(name + "'s Info");
+					String color = familyMember.getColor();
+					if (color.equals("Red")) {
+						btnPerson4.setBackgroundColor(Color.RED);
+					}
+					if (color.equals("Blue")) {
+						btnPerson4.setBackgroundColor(Color.RED);
+					}
+					if (color.equals("Cyan")) {
+						btnPerson4.setBackgroundColor(Color.CYAN);
+					}
+					if (color.equals("Yellow")) {
+						btnPerson4.setBackgroundColor(Color.YELLOW);
+					}
+					if (color.equals("Green")) {
+						btnPerson4.setBackgroundColor(Color.GREEN);
+					}
+					if (color.equals("Magenta")) {
+						btnPerson4.setBackgroundColor(Color.MAGENTA);
+					}
+				}
+				// BtnPerson3 INVISIBLE
+				if (btnPerson3.getVisibility() == View.INVISIBLE) {
+					// BtnPerson2 VISIBLE
+					if (btnPerson2.getVisibility() == View.VISIBLE) {
+						btnPerson3.setVisibility(View.VISIBLE);
+						btnPerson3.setText(name + "'s Info");
+						String color = familyMember.getColor();
+						if (color.equals("Red")) {
+							btnPerson3.setBackgroundColor(Color.RED);
 						}
-				}
-				if (color != "Cyan") {
-						if (color == "Green") {
-							btnPerson1.setBackgroundColor(Color.GREEN);
+						if (color.equals("Blue")) {
+							btnPerson3.setBackgroundColor(Color.RED);
 						}
-				}
-				if (color != "Green") {
-					if (color == "Yellow") {
-						btnPerson1.setBackgroundColor(Color.YELLOW);
+						if (color.equals("Cyan")) {
+							btnPerson3.setBackgroundColor(Color.CYAN);
+						}
+						if (color.equals("Yellow")) {
+							btnPerson3.setBackgroundColor(Color.YELLOW);
+						}
+						if (color.equals("Green")) {
+							btnPerson3.setBackgroundColor(Color.GREEN);
+						}
+						if (color.equals("Magenta")) {
+							btnPerson3.setBackgroundColor(Color.MAGENTA);
+						}
 					}
-				}
-				if (color != "Yellow") {
-					if (color == "Magenta") {
-						btnPerson1.setBackgroundColor(Color.MAGENTA);
-											}
-									}
-							
-					}
-		} // end if
-		
-		if (btnPerson1.getVisibility() != View.VISIBLE) {
-			if (btnPerson2.getVisibility() == View.INVISIBLE) {
-				btnPerson2.setVisibility(View.VISIBLE);
-				String color = String.valueOf(spinnerColor.getSelectedItem());
-				btnPerson2.setText(name + "'s Info");
-				if (color != "Red") {
-					if (color == "Blue") {
-						btnPerson1.setBackgroundColor(Color.BLUE);
-					}
-					if (color != "Blue") {
-							if (color == "Cyan") {
+					// BtnPerson2 INVISIBLE
+					if (btnPerson2.getVisibility() == View.INVISIBLE) {
+						// BtnPerson1 VISIBLE
+						if (btnPerson1.getVisibility() == View.VISIBLE) {
+							btnPerson2.setVisibility(View.VISIBLE);
+							btnPerson2.setText(name + "'s Info");
+							String color = familyMember.getColor();
+							if (color.equals("Red")) {
+								btnPerson2.setBackgroundColor(Color.RED);
+							}
+							if (color.equals("Blue")) {
+								btnPerson2.setBackgroundColor(Color.RED);
+							}
+							if (color.equals("Cyan")) {
+								btnPerson2.setBackgroundColor(Color.CYAN);
+							}
+							if (color.equals("Yellow")) {
+								btnPerson2.setBackgroundColor(Color.YELLOW);
+							}
+							if (color.equals("Green")) {
+								btnPerson2.setBackgroundColor(Color.GREEN);
+							}
+							if (color.equals("Magenta")) {
+								btnPerson2.setBackgroundColor(Color.MAGENTA);
+							}
+						}
+						// BtnPerson1 INVISIBLE
+						if (btnPerson1.getVisibility() == View.INVISIBLE) {
+							btnPerson1.setVisibility(View.VISIBLE);
+							btnPerson1.setText(name + "'s Info");
+							String color = familyMember.getColor();
+							if (color.equals("Red")) {
+								btnPerson1.setBackgroundColor(Color.RED);
+							}
+							if (color.equals("Blue")) {
+								btnPerson1.setBackgroundColor(Color.RED);
+							}
+							if (color.equals("Cyan")) {
 								btnPerson1.setBackgroundColor(Color.CYAN);
 							}
-					}
-					if (color != "Cyan") {
-							if (color == "Green") {
-								btnPerson1.setBackgroundColor(Color.GREEN);
-							}
-					}
-					if (color != "Green") {
-						if (color == "Yellow") {
-							btnPerson1.setBackgroundColor(Color.YELLOW);
-						}
-					}
-					if (color != "Yellow") {
-						if (color == "Magenta") {
-							btnPerson1.setBackgroundColor(Color.MAGENTA);
-												}
-										}
-								
-						}
-			} // end if
-			
-			if (btnPerson2.getVisibility() != View.VISIBLE) {
-				if (btnPerson3.getVisibility() == View.INVISIBLE) {
-					btnPerson3.setVisibility(View.VISIBLE);
-					String color = String.valueOf(spinnerColor.getSelectedItem());
-					btnPerson3.setText(name + "'s Info");
-					if (color != "Red") {
-						if (color == "Blue") {
-							btnPerson1.setBackgroundColor(Color.BLUE);
-						}
-						if (color != "Blue") {
-								if (color == "Cyan") {
-									btnPerson1.setBackgroundColor(Color.CYAN);
-								}
-						}
-						if (color != "Cyan") {
-								if (color == "Green") {
-									btnPerson1.setBackgroundColor(Color.GREEN);
-								}
-						}
-						if (color != "Green") {
-							if (color == "Yellow") {
+							if (color.equals("Yellow")) {
 								btnPerson1.setBackgroundColor(Color.YELLOW);
 							}
-						}
-						if (color != "Yellow") {
-							if (color == "Magenta") {
+							if (color.equals("Green")) {
+								btnPerson1.setBackgroundColor(Color.GREEN);
+							}
+							if (color.equals("Magenta")) {
 								btnPerson1.setBackgroundColor(Color.MAGENTA);
-													}
-											}
-									
 							}
-				} // end if
-				if (btnPerson3.getVisibility() != View.VISIBLE) {
-					if (btnPerson4.getVisibility() == View.INVISIBLE) {
-						btnPerson4.setVisibility(View.VISIBLE);
-						String color = String.valueOf(spinnerColor.getSelectedItem());
-						btnPerson4.setText(name + "'s Info");
-						if (color == "Red") {
-							btnPerson1.setBackgroundColor(Color.RED);
-						}
-						if (color != "Red") {
-							if (color == "Blue") {
-								btnPerson1.setBackgroundColor(Color.BLUE);
-							}
-							if (color != "Blue") {
-									if (color == "Cyan") {
-										btnPerson1.setBackgroundColor(Color.CYAN);
-									}
-							}
-							if (color != "Cyan") {
-									if (color == "Green") {
-										btnPerson1.setBackgroundColor(Color.GREEN);
-									}
-							}
-							if (color != "Green") {
-								if (color == "Yellow") {
-									btnPerson1.setBackgroundColor(Color.YELLOW);
-								}
-							}
-							if (color != "Yellow") {
-								if (color == "Magenta") {
-									btnPerson1.setBackgroundColor(Color.MAGENTA);
-														}
-												}
-										
-								}
-						}
-
-						}
-
-						}
-
-						}
-					if (btnPerson4.getVisibility() != View.VISIBLE) {
-						if (btnPerson5.getVisibility() == View.INVISIBLE) {
-							btnPerson5.setVisibility(View.VISIBLE);
-							String color = String.valueOf(spinnerColor.getSelectedItem());
-							btnPerson5.setText(name + "'s Info");
-							if (color != "Red") {
-								if (color == "Blue") {
-									btnPerson1.setBackgroundColor(Color.BLUE);
-								}
-								if (color != "Blue") {
-										if (color == "Cyan") {
-											btnPerson1.setBackgroundColor(Color.CYAN);
-										}
-								}
-								if (color != "Cyan") {
-										if (color == "Green") {
-											btnPerson1.setBackgroundColor(Color.GREEN);
-										}
-								}
-								if (color != "Green") {
-									if (color == "Yellow") {
-										btnPerson1.setBackgroundColor(Color.YELLOW);
-									}
-								}
-								if (color != "Yellow") {
-									if (color == "Magenta") {
-										btnPerson1.setBackgroundColor(Color.MAGENTA);
-															}
-													}
-							}
-											
-									}
-						} // end if
-						if (btnPerson5.getVisibility() != View.VISIBLE) {
-							btnAddFamily.setVisibility(View.INVISIBLE);
 						}
 					}
+				}
+			}
+		}
+	}
+								
+				
+		
+		
+			
+			
 
 
 	
