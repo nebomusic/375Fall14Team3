@@ -15,14 +15,11 @@
         <item>Magenta</item>
     </string-array>
 
-<<<<<<< HEAD
     <string name="title_activity_activity_hmed">ActivityHMed</string>
-    <string name="hello_world">Hello world!</string>
-=======
+
     <string name="title_activity_activity_husband">ActivityHusband</string>
-    <string name="hello_world">Hello world!</string>
+
     <string name="title_activity_activity_wife">ActivityWife</string>
     <string name="title_activity_activity_daughter">ActivityDaughter</string>
->>>>>>> 06fe63959abb5fce3f8308241cb89856b9be978f
 
 </resources>
