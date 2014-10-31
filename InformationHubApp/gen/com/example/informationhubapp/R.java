@@ -37,9 +37,12 @@ public final class R {
         public static final int btnPerson4=0x7f090026;
         public static final int btnPerson5=0x7f090027;
         public static final int btnSubmit=0x7f090021;
+<<<<<<< HEAD
         public static final int buttonActivityDaughter=0x7f09002b;
         public static final int buttonActivityHusband=0x7f090029;
         public static final int buttonActivityWife=0x7f09002a;
+=======
+>>>>>>> b9f6668510638dab1b495c3dfd37b335a6d1dda3
         public static final int buttonAddInfo=0x7f09000a;
         public static final int buttonDate=0x7f09000c;
         public static final int buttonFin=0x7f090006;

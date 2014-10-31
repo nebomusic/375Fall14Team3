@@ -48,12 +48,11 @@ public class ActivityHMed extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	public void addInfoClicked (View v){
-		buttonAddInfo.setText(String.valueOf(editText));
-	}
+	
 	public void displayInfo(){
-		String sInfo = buttonDate();
-		sInfo += () + ".";
-		textView1.setText(sInfo);
+		String Info = editText.getText().toString();
+		String Date = editDate. getText().toString();
+		String Display = Info +""+ Date;
+		textView1.setText(Display);
 	}
 }
