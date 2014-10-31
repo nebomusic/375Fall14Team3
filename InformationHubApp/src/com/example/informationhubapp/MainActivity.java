@@ -56,6 +56,12 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+    
+    @Override
+    public void onResume() {
+    	super.onResume();
+    	setContentView(R.layout.activity_main);
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -311,4 +317,26 @@ public class MainActivity extends Activity {
 		screenAdd();
 	}
 	
+	
+	
+	// Function to switch Intents
+	public void handleClick(View v) {
+		// which button was clicked
+		switch (v.getId()) {
+		case R.id.buttonActivityHusband:
+			// Create new Intent
+			Intent intentOne = new Intent (this, ActivityHusband.class);
+			// Start intent
+			startActivity(intentOne);
+			break;
+		case R.id.buttonActivityWife:
+			Intent intentTwo = new Intent (this, ActivityWife.class);
+			startActivity(intentTwo);
+			break;
+		case R.id.buttonActivityDaughter:
+			Intent intentThree = new Intent (this, ActivityDaughter.class);
+			startActivity(intentThree);
+			break;
+		}
+	}
 }

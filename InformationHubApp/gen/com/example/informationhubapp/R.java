@@ -29,7 +29,7 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayout1=0x7f090000;
-        public static final int action_settings=0x7f090029;
+        public static final int action_settings=0x7f09002c;
         public static final int btnAddFamily=0x7f090028;
         public static final int btnPerson1=0x7f090023;
         public static final int btnPerson2=0x7f090024;
@@ -37,17 +37,20 @@ public final class R {
         public static final int btnPerson4=0x7f090026;
         public static final int btnPerson5=0x7f090027;
         public static final int btnSubmit=0x7f090021;
-        public static final int button1=0x7f09000c;
+        public static final int buttonActivityDaughter=0x7f09002b;
+        public static final int buttonActivityHusband=0x7f090029;
+        public static final int buttonActivityWife=0x7f09002a;
         public static final int buttonAddInfo=0x7f09000a;
+        public static final int buttonDate=0x7f09000c;
         public static final int buttonFin=0x7f090006;
         public static final int buttonMed=0x7f090004;
         public static final int buttonOth=0x7f090008;
         public static final int buttonReset=0x7f09000d;
         public static final int editBirthday=0x7f090018;
+        public static final int editDate=0x7f09000b;
         public static final int editHeight=0x7f09001d;
         public static final int editName=0x7f09000f;
         public static final int editText=0x7f090009;
-        public static final int editText1=0x7f09000b;
         public static final int editWeight=0x7f09001b;
         public static final int radioFemale=0x7f090012;
         public static final int radioGroup1=0x7f090010;

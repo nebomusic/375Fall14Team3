@@ -117,4 +117,32 @@
 
     </TableRow>
 
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttonActivityHusband"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Husband Info"
+            android:onClick = "handleClick" />
+
+        <Button
+            android:id="@+id/buttonActivityWife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wife Info" 
+            android:onClick = "handleClick"/>
+
+        <Button
+            android:id="@+id/buttonActivityDaughter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daughter Info"
+            android:onClick = "handleClick" />  
+
+    </TableRow>
+
 </LinearLayout>
