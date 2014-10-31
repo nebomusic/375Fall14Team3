@@ -37,16 +37,16 @@ public class ActivityDaughter extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	public void handleClick(View v) {
-		Intent intent = new Intent(this, ActivityDMed.class);
-		startActivity(intent);
-	}
-	public void handleClick(View v) {
-		Intent intent = new Intent(this, ActivityDFin.class);
-		startActivity(intent);
-		)
-	public void handleClick(View v) {
-		Intent intent = new Intent(this, ActivityDOth.class);
-		startActivity(intent);
+//	public void handleClick(View v) {
+//		Intent intent = new Intent(this, ActivityDMed.class);
+//		startActivity(intent);
+//	}
+//	public void handleClick(View v) {
+//		Intent intent = new Intent(this, ActivityDFin.class);
+//		startActivity(intent);
+//		)
+//	public void handleClick(View v) {
+//		Intent intent = new Intent(this, ActivityDOth.class);
+//		startActivity(intent);
 	
 }
